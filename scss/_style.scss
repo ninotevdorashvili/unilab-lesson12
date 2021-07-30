@@ -1,0 +1,74 @@
+.section2-box {
+    @include d-flex (flex, flex-end, center);
+    .text-block {
+        width: $size1;
+        h3 {
+            width: $size4;
+            font-size: 50px;
+        }
+        p {
+            width: $size4;
+            font-size: $size2;
+            line-height: $size3;
+        }
+    }
+    .button {
+        width: 307px;
+        height: 72px;
+        background-color: $bg-color;
+        font-size: $size2;
+        @include d-flex (flex, center, center);
+        font-family: $fontlato;
+        color: #fff;
+        @include border (solid,36px);
+    }
+    .image-block {
+        width: $size1;
+        margin-left: 86px;
+        img {
+            width: $size5;
+        }
+    }
+
+}
+
+// section3-style
+.section3-content {
+    width: 1171px;
+    margin: 0 auto;
+    .blocks-container {
+        @include d-wrap (flex,wrap,space-between);
+        .block {
+            width: 369px;
+            height: 372px;
+            @include d-column (flex,center, center,column);
+            text-align: center;
+            &:nth-child(1),
+            &:nth-child(2),
+            &:nth-child(3) {
+                margin-bottom: $size3;
+            }
+            .icon-block {
+                width: 88px;
+                height: 88px;
+                background-color: $bg-color;
+                border-style: solid;
+                border-radius: 50px;
+                @include d-flex (flex,center,center);
+            }
+            .block h4 {
+                font-family: $fontlato;
+                font-size: $size2;
+                margin-top: $size3;
+                margin-bottom: $size3;
+            }
+            .block p {
+                font-family: $fontpoppins;
+                color: rgba(0, 0, 0, 0.65);
+                font-size: $size2;
+                width: 251px;
+            }
+        }
+    }
+}
+

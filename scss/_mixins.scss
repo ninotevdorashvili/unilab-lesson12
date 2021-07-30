@@ -1,0 +1,20 @@
+@mixin d-flex($display,$justify,$align) {
+    display: $display;
+    justify-content: $justify;
+    align-items: $align;
+}
+@mixin d-wrap ($display, $wrap, $justify ) {
+    display: $display;
+    flex-wrap: $wrap;
+    justify-content: $justify;
+}
+@mixin d-column ($display,$justify,$align,$column) {
+    display: $display;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $column;
+}
+@mixin border ($style,$radius) {
+    border-style: $style;
+    border-radius: $radius;
+}
