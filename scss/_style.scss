@@ -5,11 +5,13 @@
         h3 {
             width: $size4;
             font-size: 50px;
+            font-family: $fontlato;
         }
         p {
             width: $size4;
             font-size: $size2;
             line-height: $size3;
+            font-family: $fontlato;
         }
     }
     .button {
@@ -56,13 +58,13 @@
                 border-radius: 50px;
                 @include d-flex (flex,center,center);
             }
-            .block h4 {
+            h4 {
                 font-family: $fontlato;
                 font-size: $size2;
                 margin-top: $size3;
                 margin-bottom: $size3;
             }
-            .block p {
+            p {
                 font-family: $fontpoppins;
                 color: rgba(0, 0, 0, 0.65);
                 font-size: $size2;
